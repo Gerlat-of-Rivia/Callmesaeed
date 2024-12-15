@@ -2834,7 +2834,7 @@ input, select, textarea {
 
 		#header .logo {
 			display: block;
-			border-bottom: 0;
+			border-bottom: 5;
 			color: inherit;
 			font-weight: 900;
 			letter-spacing: 0.35em;
