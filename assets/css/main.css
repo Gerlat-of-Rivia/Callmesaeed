@@ -3352,7 +3352,7 @@ input, select, textarea {
 }
 
 .gallery img {
-    width: 80%;  /* Each image takes full width of its container */
+    width: 100%;  /* Each image takes full width of its container */
     height: auto;  /* Maintain aspect ratio */
     margin-bottom: 20px;  /* Adds spacing between images */
     border-radius: 8px;
