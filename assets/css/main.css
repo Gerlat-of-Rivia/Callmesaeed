@@ -3348,6 +3348,7 @@ input, select, textarea {
 .gallery {
     display: block; /* Change from flex to block for vertical layout */
     margin-top: 2em;
+	text-align: center;
 }
 
 .gallery img {
@@ -3356,6 +3357,7 @@ input, select, textarea {
     margin-bottom: 20px;  /* Adds spacing between images */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Adds subtle shadow for better visuals */
+	text-align: center;
 }
 
 /* Responsive design for smaller screens */
