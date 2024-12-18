@@ -3331,41 +3331,46 @@ input, select, textarea {
 
 
 /* Media container styles (applied to video, iframe, etc.) */
-	.media-container {
-		max-width: 80%;
-		margin: 0 auto 2em auto;
-		text-align: center;
-	}
+.media-container {
+    max-width: 80%;  /* Make video container a bit smaller */
+    margin: 0 auto 2em auto;
+    text-align: center;
+}
 
-	.media-container video,
-	.media-container iframe {
-		width: 80%;
-		height: auto;
-	}
+.media-container video,
+.media-container iframe {
+    width: 80%;
+    height: auto;
+}
 
-	/* Gallery styles */
-	.gallery {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
-		justify-content: center;
-	}
+/* Marmoset Viewer size */
+.media-container iframe {
+    max-width: 800px;  /* Limit iframe width */
+    height: 500px;  /* Set height of iframe */
+}
 
-	.gallery img {
-		width: calc(33.333% - 10px);
-		height: auto;
-		border-radius: 8px;
-	}
+/* Gallery styles - One image at a time, same width as video/Marmoset viewer */
+.gallery {
+    display: block; /* Change from flex to block for vertical layout */
+    margin-top: 2em;
+}
 
-	/* Responsive design for smaller screens */
-	@media (max-width: 768px) {
-		.gallery img {
-			width: calc(50% - 10px);
-		}
+.gallery img {
+    width: 80%;  /* Each image takes full width of its container */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px;  /* Adds spacing between images */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Adds subtle shadow for better visuals */
+}
 
-		.media-container video,
-		.media-container iframe {
-			width: 80%;
-			height: auto;
-		}
-	}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .media-container {
+        max-width: 95%;  /* Make media container a bit smaller on small screens */
+    }
+
+    .gallery img {
+        width: 80%;  /* Ensure images are full-width on small screens */
+    }
+}
+
