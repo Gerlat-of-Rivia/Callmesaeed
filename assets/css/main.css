@@ -2320,6 +2320,9 @@ input, select, textarea {
 		.image img {
 			border-radius: 4px;
 			display: block;
+			width: 100%;        /* Make sure the image fills the container */
+			height: auto;       /* Maintain aspect ratio */
+			object-fit: cover;  /* Ensure the image covers the container without distortion */
 		}
 
 		.image.left, .image.right {
