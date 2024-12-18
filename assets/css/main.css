@@ -3340,7 +3340,7 @@ input, select, textarea {
 .media-container video,
 .media-container iframe {
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
 
 
