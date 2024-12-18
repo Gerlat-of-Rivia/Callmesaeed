@@ -3327,3 +3327,45 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+/* Media container styles (applied to video, iframe, etc.) */
+	.media-container {
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+		text-align: center;
+	}
+
+	.media-container video,
+	.media-container iframe {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Gallery styles */
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.gallery img {
+		width: calc(33.333% - 10px);
+		height: auto;
+		border-radius: 8px;
+	}
+
+	/* Responsive design for smaller screens */
+	@media (max-width: 768px) {
+		.gallery img {
+			width: calc(50% - 10px);
+		}
+
+		.media-container video,
+		.media-container iframe {
+			width: 100%;
+			height: auto;
+		}
+	}
