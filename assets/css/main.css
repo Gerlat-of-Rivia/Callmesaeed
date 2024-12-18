@@ -3332,14 +3332,14 @@ input, select, textarea {
 
 /* Media container styles (applied to video, iframe, etc.) */
 	.media-container {
-		max-width: 100%;
+		max-width: 80%;
 		margin: 0 auto 2em auto;
 		text-align: center;
 	}
 
 	.media-container video,
 	.media-container iframe {
-		width: 100%;
+		width: 80%;
 		height: auto;
 	}
 
@@ -3365,7 +3365,7 @@ input, select, textarea {
 
 		.media-container video,
 		.media-container iframe {
-			width: 100%;
+			width: 80%;
 			height: auto;
 		}
 	}
