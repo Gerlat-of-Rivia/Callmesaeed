@@ -3352,7 +3352,7 @@ input, select, textarea {
 }
 
 .gallery img {
-    width: 100%;  /* Each image takes full width of its container */
+    width: 70%;  /* Each image takes full width of its container */
     height: auto;  /* Maintain aspect ratio */
     margin-bottom: 20px;  /* Adds spacing between images */
     border-radius: 8px;
@@ -3363,11 +3363,11 @@ input, select, textarea {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .media-container {
-        max-width: 80%;  /* Make media container a bit smaller on small screens */
+        max-width: 60%;  /* Make media container a bit smaller on small screens */
     }
 
     .gallery img {
-        width: 80%;  /* Ensure images are full-width on small screens */
+        width: 60%;  /* Ensure images are full-width on small screens */
     }
 }
 
